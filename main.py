@@ -4,6 +4,17 @@ import sys
 # Pygame'i başlat
 pygame.init()
 
+#yılanın başlangıç konumu
+x = 300
+y = 200
+
+#hareket miktarı(başlangıçta hareketsiz)
+x_change = 0
+y_change = 0
+
+#yılanın kare boyutu
+snake_block = 10
+
 # Ekran boyutu
 width = 600
 height = 400
