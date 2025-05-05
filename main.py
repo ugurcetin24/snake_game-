@@ -33,6 +33,17 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                x_change = -snake_block
+                y_change = 0
+            elif event.key == pygame.K_RIGHT:
+                x_change = snake_block
+                y_change = 0
+            elif event.key == pygame.K_UP:
+                y_change = -snake_block
+                x_change = 0
+            elif event.key == pygame.K_DOWN:
+                y_change = snake_block
+                x_change = 0
 
-    screen.fill(black)  # Ekranı siyaha boya
-    pygame.display.update()  # Ekranı güncelle
