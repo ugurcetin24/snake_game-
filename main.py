@@ -46,5 +46,11 @@ while True:
             elif event.key == pygame.K_DOWN:
                 y_change = snake_block
                 x_change = 0
+    x += x_change
+    y += y_change
+
+    screen.fill(black)
+    pygame.draw.rect(screen, green, [x, y, snake_block, snake_block])
+    pygame.display.update()
     
     
