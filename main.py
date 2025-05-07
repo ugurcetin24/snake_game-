@@ -49,8 +49,18 @@ while True:
     x += x_change
     y += y_change
 
+        # Ekran dışına çıkma kontrolü
+    if x < 0 or x >= 600 or y < 0 or y >= 400:
+        pygame.quit()
+        sys.exit()
+
+    # Ekranı temizle
     screen.fill(black)
+
+    # Yılanı çiz    
     pygame.draw.rect(screen, green, [x, y, snake_block, snake_block])
+
+    # Pencereyi güncelle
     pygame.display.update()
     
     
