@@ -4,6 +4,9 @@ import sys
 # Pygame'i başlat
 pygame.init()
 
+#Pygame'in saatini başlat
+clock = pygame.time.Clock()
+
 #yılanın başlangıç konumu
 x = 300
 y = 200
@@ -63,4 +66,4 @@ while True:
     # Pencereyi güncelle
     pygame.display.update()
     
-    
+    clock.tick(10) #10 fps
